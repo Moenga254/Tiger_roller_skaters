@@ -4,33 +4,33 @@ import { Star } from 'lucide-react';
 export default function Gallery() {
   const galleryImages = [
     {
-      src: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/gallery-skaters-group-EbATDm2kQwZuEUB7SBtTdG.webp',
-      alt: 'Group of diverse roller skaters in action',
+      src: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/Gallery1_bc1351e1.jpg',
+      alt: 'Tiger Roller Skaters community moment',
       title: 'Community Skating',
     },
     {
-      src: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/gallery-speed-skating-YhiaPq9bsimXyGE2n2CUuA.webp',
-      alt: 'Professional speed skater in action',
+      src: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/Gallery2_47945c86.jpg',
+      alt: 'Roller skating action shot',
       title: 'Speed Skating',
     },
     {
-      src: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/gallery-roller-hockey-cKDMU3tvC9Xwxk9pFUxd8d.webp',
-      alt: 'Roller hockey match moment',
+      src: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/Gallery4_43c1e575.jpg',
+      alt: 'Roller hockey match',
       title: 'Roller Hockey',
     },
     {
-      src: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/gallery-beginners-class-djTzow5LmxastA7U5QHPe3.webp',
-      alt: 'Beginner class with supportive coach',
+      src: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/Gallery6_3ecec856.jpg',
+      alt: 'Beginner training class',
       title: 'Beginner Training',
     },
     {
-      src: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/gallery-fun-skating-5ktbfusk5STdHVkqSaQgPL.webp',
-      alt: 'Fun community skating event',
+      src: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/Gallery7_11abd4eb.jpg',
+      alt: 'Community event',
       title: 'Community Event',
     },
     {
-      src: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/gallery-advanced-tricks-BShVwjBNuseAcvC2Jczu7m.webp',
-      alt: 'Advanced skater performing tricks',
+      src: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/Gallery8_db0b74a0.jpg',
+      alt: 'Advanced skating skills',
       title: 'Advanced Skills',
     },
   ];
@@ -39,14 +39,14 @@ export default function Gallery() {
     {
       name: 'Sarah Mwangi',
       role: 'Student',
-      image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/testimonial-student-portrait-BJYusTVz2fAVDDsjWzgcUg.webp',
+      image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/Testimonial1_a2c1e02b.jpg',
       content: 'Tiger Roller Skaters transformed my confidence! The coaches are amazing and the community is so supportive. I went from being scared to falling to performing tricks!',
       rating: 5,
     },
     {
       name: 'James Kipchoge',
       role: 'College Student',
-      image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/testimonial-coach-portrait-Bqsy8uMZ4Neia4pznZq5NY.webp',
+      image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/Testimonial2_0a9d08cb.jpg',
       content: 'Best decision I made! The training is professional, fun, and I\'ve made great friends here. The roller hockey sessions are intense and rewarding.',
       rating: 5,
     },
