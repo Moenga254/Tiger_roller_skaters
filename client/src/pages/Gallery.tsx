@@ -2,41 +2,76 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Star } from 'lucide-react';
 
 export default function Gallery() {
+  const galleryImages = [
+    {
+      src: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/gallery-skaters-group-EbATDm2kQwZuEUB7SBtTdG.webp',
+      alt: 'Group of diverse roller skaters in action',
+      title: 'Community Skating',
+    },
+    {
+      src: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/gallery-speed-skating-YhiaPq9bsimXyGE2n2CUuA.webp',
+      alt: 'Professional speed skater in action',
+      title: 'Speed Skating',
+    },
+    {
+      src: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/gallery-roller-hockey-cKDMU3tvC9Xwxk9pFUxd8d.webp',
+      alt: 'Roller hockey match moment',
+      title: 'Roller Hockey',
+    },
+    {
+      src: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/gallery-beginners-class-djTzow5LmxastA7U5QHPe3.webp',
+      alt: 'Beginner class with supportive coach',
+      title: 'Beginner Training',
+    },
+    {
+      src: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/gallery-fun-skating-5ktbfusk5STdHVkqSaQgPL.webp',
+      alt: 'Fun community skating event',
+      title: 'Community Event',
+    },
+    {
+      src: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/gallery-advanced-tricks-BShVwjBNuseAcvC2Jczu7m.webp',
+      alt: 'Advanced skater performing tricks',
+      title: 'Advanced Skills',
+    },
+  ];
+
   const testimonials = [
     {
       name: 'Sarah Mwangi',
       role: 'Student',
-      content: 'Tiger Roller Skaters transformed my confidence! The coaches are amazing and the community is so supportive.',
+      image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/testimonial-student-portrait-BJYusTVz2fAVDDsjWzgcUg.webp',
+      content: 'Tiger Roller Skaters transformed my confidence! The coaches are amazing and the community is so supportive. I went from being scared to falling to performing tricks!',
       rating: 5,
     },
     {
       name: 'James Kipchoge',
       role: 'College Student',
-      content: 'Best decision I made! The training is professional, fun, and I\'ve made great friends here.',
+      image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/testimonial-coach-portrait-Bqsy8uMZ4Neia4pznZq5NY.webp',
+      content: 'Best decision I made! The training is professional, fun, and I\'ve made great friends here. The roller hockey sessions are intense and rewarding.',
       rating: 5,
     },
     {
       name: 'Maria Okonkwo',
       role: 'Parent',
-      content: 'My kids love coming here. The coaches are patient and make learning skating enjoyable and safe.',
+      content: 'My kids love coming here. The coaches are patient and make learning skating enjoyable and safe. I can see their confidence growing every week.',
       rating: 5,
     },
     {
       name: 'David Kariuki',
       role: 'Beginner',
-      content: 'Started as a complete beginner and now I\'m skating confidently. Highly recommend!',
+      content: 'Started as a complete beginner and now I\'m skating confidently. The step-by-step approach and encouragement from the team made all the difference!',
       rating: 5,
     },
     {
       name: 'Emily Njoroge',
       role: 'Advanced Skater',
-      content: 'The pro-level training pushed me to new heights. The community here is incredible.',
+      content: 'The pro-level training pushed me to new heights. The community here is incredible and everyone supports each other\'s growth.',
       rating: 5,
     },
     {
       name: 'Peter Ochieng',
       role: 'Roller Hockey Player',
-      content: 'The hockey training is intense and rewarding. Best coaching in Nairobi!',
+      content: 'The hockey training is intense and rewarding. Best coaching in Nairobi! The team dynamics and competitive spirit here are unmatched.',
       rating: 5,
     },
   ];
@@ -44,24 +79,57 @@ export default function Gallery() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Hero Section */}
-      <section className="py-20 px-6 bg-gradient-to-b from-accent/10 to-background">
+      <section className="py-16 md:py-20 px-4 md:px-6 bg-gradient-to-b from-accent/10 to-background">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl font-bold mb-6">Gallery & Testimonials</h1>
-          <p className="text-xl text-muted-foreground">
-            See what our community has to say about their experience with Tiger Roller Skaters.
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">Gallery & Testimonials</h1>
+          <p className="text-lg md:text-xl text-muted-foreground">
+            See our community in action and hear what our skaters have to say about their experience.
           </p>
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="py-20 px-6">
+      {/* Gallery Images Section */}
+      <section className="py-16 md:py-20 px-4 md:px-6">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">What Our Skaters Say</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Follow Our Journey</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {galleryImages.map((image, index) => (
+              <div
+                key={index}
+                className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="w-full h-64 md:h-72 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end">
+                  <div className="p-4 w-full">
+                    <h3 className="text-white font-semibold text-lg">{image.title}</h3>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-16 md:py-20 px-4 md:px-6 bg-muted/30">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">What Our Skaters Say</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
+              <Card key={index} className="hover:shadow-lg transition-shadow h-full flex flex-col">
                 <CardHeader>
-                  <div className="flex items-start justify-between mb-4">
+                  <div className="flex items-center gap-4 mb-4">
+                    {testimonial.image && (
+                      <img
+                        src={testimonial.image}
+                        alt={testimonial.name}
+                        className="w-12 h-12 rounded-full object-cover"
+                      />
+                    )}
                     <div>
                       <CardTitle className="text-lg">{testimonial.name}</CardTitle>
                       <p className="text-sm text-muted-foreground">{testimonial.role}</p>
@@ -73,7 +141,7 @@ export default function Gallery() {
                     ))}
                   </div>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="flex-grow">
                   <p className="text-muted-foreground italic">"{testimonial.content}"</p>
                 </CardContent>
               </Card>
@@ -82,14 +150,14 @@ export default function Gallery() {
         </div>
       </section>
 
-      {/* Follow Us Section */}
-      <section className="py-20 px-6 bg-accent/10">
+      {/* Call to Action Section */}
+      <section className="py-16 md:py-20 px-4 md:px-6 bg-accent/10">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6">Follow Our Journey</h2>
-          <p className="text-xl text-muted-foreground mb-8">
-            Stay updated with our latest events, training sessions, and community highlights.
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Join Our Community</h2>
+          <p className="text-lg md:text-xl text-muted-foreground mb-8">
+            Ready to start your roller skating journey? Connect with us on social media or book your first session today!
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
             <a
               href="https://www.tiktok.com/@tigerrollerskaters"
               target="_blank"
