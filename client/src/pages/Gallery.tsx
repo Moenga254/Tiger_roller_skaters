@@ -1,5 +1,4 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Star } from 'lucide-react';
 
 export default function Gallery() {
   const galleryImages = [
@@ -35,44 +34,14 @@ export default function Gallery() {
     },
   ];
 
-  const testimonials = [
+  const testimonialImages = [
     {
-      name: 'Sarah Mwangi',
-      role: 'Student',
-      image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/Testimonial1_a2c1e02b.jpg',
-      content: 'Tiger Roller Skaters transformed my confidence! The coaches are amazing and the community is so supportive. I went from being scared to falling to performing tricks!',
-      rating: 5,
+      src: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/Testimonial1_a2c1e02b.jpg',
+      alt: 'Tiger Roller Skaters testimonial',
     },
     {
-      name: 'James Kipchoge',
-      role: 'College Student',
-      image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/Testimonial2_0a9d08cb.jpg',
-      content: 'Best decision I made! The training is professional, fun, and I\'ve made great friends here. The roller hockey sessions are intense and rewarding.',
-      rating: 5,
-    },
-    {
-      name: 'Maria Okonkwo',
-      role: 'Parent',
-      content: 'My kids love coming here. The coaches are patient and make learning skating enjoyable and safe. I can see their confidence growing every week.',
-      rating: 5,
-    },
-    {
-      name: 'David Kariuki',
-      role: 'Beginner',
-      content: 'Started as a complete beginner and now I\'m skating confidently. The step-by-step approach and encouragement from the team made all the difference!',
-      rating: 5,
-    },
-    {
-      name: 'Emily Njoroge',
-      role: 'Advanced Skater',
-      content: 'The pro-level training pushed me to new heights. The community here is incredible and everyone supports each other\'s growth.',
-      rating: 5,
-    },
-    {
-      name: 'Peter Ochieng',
-      role: 'Roller Hockey Player',
-      content: 'The hockey training is intense and rewarding. Best coaching in Nairobi! The team dynamics and competitive spirit here are unmatched.',
-      rating: 5,
+      src: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/Testimonial2_0a9d08cb.jpg',
+      alt: 'Tiger Roller Skaters testimonial',
     },
   ];
 
@@ -118,33 +87,18 @@ export default function Gallery() {
       <section className="py-16 md:py-20 px-4 md:px-6 bg-muted/30">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">What Our Skaters Say</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {testimonials.map((testimonial, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow h-full flex flex-col">
-                <CardHeader>
-                  <div className="flex items-center gap-4 mb-4">
-                    {testimonial.image && (
-                      <img
-                        src={testimonial.image}
-                        alt={testimonial.name}
-                        className="w-12 h-12 rounded-full object-cover"
-                      />
-                    )}
-                    <div>
-                      <CardTitle className="text-lg">{testimonial.name}</CardTitle>
-                      <p className="text-sm text-muted-foreground">{testimonial.role}</p>
-                    </div>
-                  </div>
-                  <div className="flex gap-1">
-                    {Array.from({ length: testimonial.rating }).map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-accent text-accent" />
-                    ))}
-                  </div>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <p className="text-muted-foreground italic">"{testimonial.content}"</p>
-                </CardContent>
-              </Card>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+            {testimonialImages.map((image, index) => (
+              <div
+                key={index}
+                className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="w-full h-80 md:h-96 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
             ))}
           </div>
         </div>

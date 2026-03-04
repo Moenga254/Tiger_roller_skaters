@@ -30,14 +30,7 @@ export default function Services() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">What We Offer</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Speed Skating Card */}
-            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="h-48 overflow-hidden bg-muted">
-                <img
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/services-speed-skating-F8Bgt9GTNnu5wYLNSny4qg.webp"
-                  alt="Speed Skating"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+            <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
                 <CardTitle className="text-2xl">Speed Skating</CardTitle>
               </CardHeader>
@@ -49,14 +42,7 @@ export default function Services() {
             </Card>
 
             {/* Roller Hockey Card */}
-            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="h-48 overflow-hidden bg-muted">
-                <img
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/services-roller-hockey-f52WUmv2oWZQLdTYPB6Ynp.webp"
-                  alt="Roller Hockey"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+            <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
                 <CardTitle className="text-2xl">Roller Hockey</CardTitle>
               </CardHeader>
@@ -68,14 +54,7 @@ export default function Services() {
             </Card>
 
             {/* Fun Skating Card */}
-            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="h-48 overflow-hidden bg-muted">
-                <img
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/services-fun-skating-CZ5rSWKiUTqBNwcm76NEZr.webp"
-                  alt="Fun Skating"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+            <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
                 <CardTitle className="text-2xl">Fun Skating</CardTitle>
               </CardHeader>
