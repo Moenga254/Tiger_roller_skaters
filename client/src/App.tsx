@@ -6,6 +6,7 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { Footer } from "./components/Footer";
 import { ThemeToggle } from "./components/ThemeToggle";
+import { Navbar } from "./components/Navbar";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Gallery from "./pages/Gallery";
@@ -41,7 +42,10 @@ function App() {
         <TooltipProvider>
           <Toaster />
           <ThemeToggle />
-          <Router />
+          <Navbar />
+          <div className="pt-16">
+            <Router />
+          </div>
           <Footer />
         </TooltipProvider>
       </ThemeProvider>
