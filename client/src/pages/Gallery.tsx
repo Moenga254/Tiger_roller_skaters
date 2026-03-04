@@ -87,16 +87,16 @@ export default function Gallery() {
       <section className="py-16 md:py-20 px-4 md:px-6 bg-muted/30">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">What Our Skaters Say</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+          <div className="flex flex-col md:flex-row gap-6 justify-center items-center max-w-4xl mx-auto">
             {testimonialImages.map((image, index) => (
               <div
                 key={index}
-                className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+                className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow w-full md:w-1/2"
               >
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="w-full h-80 md:h-96 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
             ))}
