@@ -1,5 +1,4 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
 
 export default function Services() {
   return (
@@ -12,15 +11,15 @@ export default function Services() {
             Whether you're looking to take your first steps on skates or refine your skills, Tiger Roller Skaters is the perfect place to start.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
-            <Button size="lg" asChild>
-              <a href="#skating-classes">Skating Classes</a>
-            </Button>
-            <Button size="lg" variant="outline" asChild>
-              <a href="#community-events">Community Events</a>
-            </Button>
-            <Button size="lg" variant="outline" asChild>
-              <a href="#supportive-environment">Supportive Environment</a>
-            </Button>
+            <a href="#skating-classes" className="px-6 py-3 bg-muted text-foreground rounded-lg font-semibold hover:bg-muted/80 transition-colors inline-block">
+              Skating Classes
+            </a>
+            <a href="#community-events" className="px-6 py-3 border border-border text-foreground rounded-lg font-semibold hover:bg-muted transition-colors inline-block">
+              Community Events
+            </a>
+            <a href="#supportive-environment" className="px-6 py-3 border border-border text-foreground rounded-lg font-semibold hover:bg-muted transition-colors inline-block">
+              Supportive Environment
+            </a>
           </div>
         </div>
       </section>
@@ -113,9 +112,6 @@ export default function Services() {
               </div>
             </CardContent>
           </Card>
-          <Button size="lg" className="w-full" asChild>
-            <a href="/booking">Book Your Skating Class</a>
-          </Button>
         </div>
       </section>
 
@@ -134,7 +130,7 @@ export default function Services() {
                 <p className="text-muted-foreground mb-4">
                   We coach along your residences or estates with flexible scheduling:
                 </p>
-                <p className="text-3xl font-bold text-accent mb-4">
+                <p className="text-3xl font-bold text-yellow-500 mb-4">
                   KSH 1,200 - 1,500 per session
                 </p>
                 <p className="text-sm text-muted-foreground">
@@ -152,16 +148,16 @@ export default function Services() {
                 <div className="space-y-4">
                   <div>
                     <p className="font-semibold text-lg mb-2">Standard Classes</p>
-                    <p className="text-3xl font-bold text-accent">KSH 3,000 per term</p>
+                    <p className="text-3xl font-bold text-yellow-500">KSH 3,000 per term</p>
                     <p className="text-sm text-muted-foreground">10-12 lessons per term</p>
                   </div>
                   <div className="border-t pt-4">
                     <p className="font-semibold text-lg mb-2">Classes with Roller Hockey</p>
-                    <p className="text-3xl font-bold text-accent">KSH 3,500 per term</p>
+                    <p className="text-3xl font-bold text-yellow-500">KSH 3,500 per term</p>
                     <p className="text-sm text-muted-foreground">Includes roller hockey lesson</p>
                   </div>
-                  <div className="bg-accent/10 p-4 rounded-lg mt-4">
-                    <p className="text-sm font-semibold text-accent">✓ All skating gear provided during practice lessons</p>
+                  <div className="bg-yellow-100 dark:bg-yellow-900/30 p-4 rounded-lg mt-4">
+                    <p className="text-sm font-semibold text-yellow-700 dark:text-yellow-300">✓ All skating gear provided during practice lessons</p>
                   </div>
                 </div>
               </CardContent>
@@ -284,19 +280,6 @@ export default function Services() {
               </Card>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-16 md:py-20 px-4 md:px-6 bg-accent/10">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Get Started?</h2>
-          <p className="text-lg md:text-xl text-muted-foreground mb-8">
-            Choose your skill level and book your first session today.
-          </p>
-          <Button size="lg" asChild>
-            <a href="/booking">Book Your Session</a>
-          </Button>
         </div>
       </section>
     </div>

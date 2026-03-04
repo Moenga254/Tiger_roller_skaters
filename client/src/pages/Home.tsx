@@ -1,6 +1,5 @@
 import ScrollExpandMedia from '@/components/ui/scroll-expansion-hero';
 import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
 
 export default function Home() {
   const videoUrl = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/Tiger_68d3192c.mp4';
@@ -52,18 +51,6 @@ export default function Home() {
                 </p>
               </CardContent>
             </Card>
-          </div>
-
-          <div className="text-center">
-            <h3 className="text-xl md:text-2xl font-bold mb-4 text-foreground">Ready to Get Started?</h3>
-            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center flex-wrap">
-              <Button size="lg" className="w-full sm:w-auto" asChild>
-                <a href="/booking">Book Your Session</a>
-              </Button>
-              <Button size="lg" variant="outline" className="w-full sm:w-auto" asChild>
-                <a href="/services">Explore Services</a>
-              </Button>
-            </div>
           </div>
         </div>
       </ScrollExpandMedia>

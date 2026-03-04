@@ -28,9 +28,6 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <Link href="/booking" className="px-6 py-2 bg-accent text-accent-foreground rounded-lg font-semibold hover:bg-accent/90 transition-colors">
-              Book Now
-            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -60,13 +57,6 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <Link
-              href="/booking"
-              className="block px-4 py-2 bg-accent text-accent-foreground rounded-lg font-semibold text-center hover:bg-accent/90 transition-colors"
-              onClick={() => setIsOpen(false)}
-            >
-              Book Now
-            </Link>
           </div>
         )}
       </div>
