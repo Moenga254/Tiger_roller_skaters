@@ -48,19 +48,19 @@ export default function Gallery() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Hero Section */}
-      <section className="py-16 md:py-20 px-4 md:px-6 bg-gradient-to-b from-accent/10 to-background">
+      <section className="py-12 md:py-20 px-3 sm:px-4 md:px-6 bg-gradient-to-b from-accent/10 to-background">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Gallery & Testimonials</h1>
-          <p className="text-lg md:text-xl text-muted-foreground">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">Gallery & Testimonials</h1>
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground">
             See our community in action and hear what our skaters have to say about their experience.
           </p>
         </div>
       </section>
 
       {/* Gallery Images Section */}
-      <section className="py-16 md:py-20 px-4 md:px-6">
+      <section className="py-12 md:py-20 px-3 sm:px-4 md:px-6">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Follow Our Journey</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12">Follow Our Journey</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {galleryImages.map((image, index) => (
               <div
@@ -84,14 +84,14 @@ export default function Gallery() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-16 md:py-20 px-4 md:px-6 bg-muted/30">
+      <section className="py-12 md:py-20 px-3 sm:px-4 md:px-6 bg-muted/30">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">What Our Skaters Say</h2>
-          <div className="flex flex-col md:flex-row gap-6 justify-center items-center max-w-4xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12">What Our Skaters Say</h2>
+          <div className="flex flex-col md:flex-row gap-3 sm:gap-4 md:gap-6 justify-center items-center max-w-4xl mx-auto">
             {testimonialImages.map((image, index) => (
               <div
                 key={index}
-                className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow w-full md:w-1/2"
+                className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow w-full md:w-1/2 max-w-xs sm:max-w-sm md:max-w-none"
               >
                 <img
                   src={image.src}
@@ -105,10 +105,10 @@ export default function Gallery() {
       </section>
 
       {/* Call to Action Section */}
-      <section className="py-16 md:py-20 px-4 md:px-6 bg-accent/10">
+      <section className="py-12 md:py-20 px-3 sm:px-4 md:px-6 bg-accent/10">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Join Our Community</h2>
-          <p className="text-lg md:text-xl text-muted-foreground mb-8">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6">Join Our Community</h2>
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-6 md:mb-8">
             Ready to start your roller skating journey? Connect with us on social media or book your first session today!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
