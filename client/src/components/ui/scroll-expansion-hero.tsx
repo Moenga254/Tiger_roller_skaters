@@ -162,7 +162,6 @@ const ScrollExpandMedia = ({
   const mediaWidth = 300 + scrollProgress * (isMobileState ? 650 : 1250);
   const mediaHeight = 400 + scrollProgress * (isMobileState ? 200 : 400);
   const textTranslateX = scrollProgress * (isMobileState ? 180 : 150);
-  const navbarOpacity = Math.min(scrollProgress * 2, 1);
 
   const firstWord = title ? title.split(' ')[0] : '';
   const restOfTitle = title ? title.split(' ').slice(1).join(' ') : '';
@@ -173,36 +172,7 @@ const ScrollExpandMedia = ({
       className='transition-colors duration-700 ease-in-out overflow-x-hidden'
     >
       <section className='relative flex flex-col items-center justify-start min-h-[100dvh]'>
-        {/* Glass Navbar Overlay */}
-        <div className='fixed top-0 left-0 right-0 z-50 bg-background/40 backdrop-blur-md border-b border-border/30 shadow-sm'>
-          <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-            <div className='flex justify-between items-center h-16'>
-              <div className='flex items-center gap-2 font-bold text-xl text-foreground'>
-                <span>🛼</span>
-                <span>Tiger Roller Skaters</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div className='relative w-full flex flex-col items-center min-h-[100dvh]'>
-          {/* Glass Navbar Overlay with Dynamic Opacity */}
-          <motion.div
-            className='fixed top-0 left-0 right-0 z-50 bg-background/40 backdrop-blur-md border-b border-border/30 shadow-sm'
-            initial={{ opacity: 0 }}
-            animate={{ opacity: navbarOpacity }}
-            transition={{ duration: 0.2 }}
-          >
-            <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-              <div className='flex justify-between items-center h-16'>
-                <div className='flex items-center gap-2 font-bold text-xl text-foreground'>
-                  <span>🛼</span>
-                  <span>Tiger Roller Skaters</span>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-
           <motion.div
             className='absolute inset-0 z-0 h-full'
             initial={{ opacity: 0 }}
