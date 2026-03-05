@@ -1,3 +1,4 @@
+import React, { JSX } from 'react';
 import { Mail, MapPin, Phone, Instagram, Music } from 'lucide-react';
 
 export function Footer() {
@@ -33,11 +34,6 @@ export function Footer() {
               <li>
                 <a href="/gallery" className="opacity-80 hover:opacity-100 transition">
                   Gallery
-                </a>
-              </li>
-              <li>
-                <a href="/booking" className="opacity-80 hover:opacity-100 transition">
-                  Book a Session
                 </a>
               </li>
             </ul>
