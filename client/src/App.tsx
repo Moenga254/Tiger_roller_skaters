@@ -9,7 +9,6 @@ import { Navbar } from "./components/Navbar";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Gallery from "./pages/Gallery";
-import Booking from "./pages/Booking";
 
 
 function Router() {
@@ -18,7 +17,6 @@ function Router() {
       <Route path={"/"} component={Home} />
       <Route path={"/services"} component={Services} />
       <Route path={"/gallery"} component={Gallery} />
-      <Route path={"/booking"} component={Booking} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

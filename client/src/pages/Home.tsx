@@ -27,7 +27,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-8 md:mb-12">
             <Card>
               <CardContent className="pt-4 md:pt-6">
-                <h3 className="font-semibold text-base md:text-lg mb-2 md:mb-3">🎯 Our Mission</h3>
+                <h3 className="font-semibold text-base md:text-lg mb-2 md:mb-3"> Our Mission</h3>
                 <p className="text-sm md:text-base text-muted-foreground">
                   To inspire and empower individuals through the art and sport of roller skating.
                 </p>
@@ -36,7 +36,7 @@ export default function Home() {
 
             <Card>
               <CardContent className="pt-4 md:pt-6">
-                <h3 className="font-semibold text-base md:text-lg mb-2 md:mb-3">👥 Community</h3>
+                <h3 className="font-semibold text-base md:text-lg mb-2 md:mb-3"> Community</h3>
                 <p className="text-sm md:text-base text-muted-foreground">
                   Build lasting friendships with skaters of all levels in a welcoming environment.
                 </p>
@@ -45,7 +45,7 @@ export default function Home() {
 
             <Card>
               <CardContent className="pt-4 md:pt-6">
-                <h3 className="font-semibold text-base md:text-lg mb-2 md:mb-3">🏆 Excellence</h3>
+                <h3 className="font-semibold text-base md:text-lg mb-2 md:mb-3"> Excellence</h3>
                 <p className="text-sm md:text-base text-muted-foreground">
                   Professional coaching and training for every skill level, from beginner to pro.
                 </p>

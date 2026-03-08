@@ -29,10 +29,6 @@ export function HeroSection() {
                                         asChild
                                         size="lg"
                                         className="h-12 rounded-full pl-5 pr-3 text-base">
-                                        <a href="/booking">
-                                            <span className="text-nowrap">Book a Session</span>
-                                            <ChevronRight className="ml-1" size={20} />
-                                        </a>
                                     </Button>
                                     <Button
                                         asChild
@@ -185,13 +181,6 @@ const HeroHeader = () => {
                                     size="sm">
                                     <a href="/gallery">
                                         <span>Gallery</span>
-                                    </a>
-                                </Button>
-                                <Button
-                                    asChild
-                                    size="sm">
-                                    <a href="/booking">
-                                        <span>Book Now</span>
                                     </a>
                                 </Button>
                             </div>
