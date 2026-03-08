@@ -9,7 +9,6 @@ export function Footer() {
           {/* Brand */}
           <div>
             <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-              <span>🛼</span>
               <span>Tiger Roller Skaters</span>
             </h3>
             <p className="text-sm opacity-80">

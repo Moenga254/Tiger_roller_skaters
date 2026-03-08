@@ -133,7 +133,6 @@ const HeroHeader = () => {
                                 href="/"
                                 aria-label="Tiger Roller Skaters home"
                                 className="flex items-center space-x-2 font-bold text-lg">
-                                <span>🛼</span>
                                 <span className="hidden sm:inline">Tiger Roller</span>
                             </a>
 
