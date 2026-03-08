@@ -118,7 +118,7 @@ export default function Gallery() {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-6 py-3 bg-accent text-accent-foreground rounded-lg font-semibold hover:bg-accent/90 transition-colors"
             >
-              🎵 Follow on TikTok
+               Follow on TikTok
             </a>
             <a
               href="https://www.instagram.com/tigerrollerskaters"
@@ -126,7 +126,7 @@ export default function Gallery() {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-6 py-3 border border-accent text-accent rounded-lg font-semibold hover:bg-accent/10 transition-colors"
             >
-              📷 Follow on Instagram
+               Follow on Instagram
             </a>
             <a
               href="https://wa.me/254700056336"
@@ -134,7 +134,7 @@ export default function Gallery() {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-6 py-3 border border-accent text-accent rounded-lg font-semibold hover:bg-accent/10 transition-colors"
             >
-              💬 Chat on WhatsApp
+               Chat on WhatsApp
             </a>
           </div>
         </div>
