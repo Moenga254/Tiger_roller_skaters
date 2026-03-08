@@ -16,7 +16,15 @@ export default function Home() {
         scrollToExpand="Scroll to Expand"
       >
         <div className="max-w-4xl mx-auto px-4 md:px-6">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-foreground">
+          {/* Tiger Roller Logo */}
+          <div className="flex justify-center mb-8 md:mb-10">
+            <img
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/tiger_logo_573bc4d6.png"
+              alt="Tiger Roller Skaters Logo"
+              className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-lg border-4 border-accent"
+            />
+          </div>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-foreground text-center">
             About Tiger Roller Skaters
           </h2>
           <p className="text-base md:text-lg mb-6 md:mb-8 text-muted-foreground">
