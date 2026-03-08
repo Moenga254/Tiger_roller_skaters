@@ -78,15 +78,15 @@ export default function Services() {
             </CardHeader>
             <CardContent className="space-y-4">
               <div>
-                <h3 className="font-semibold text-lg mb-2">🟢 Beginner Level</h3>
+                <h3 className="font-semibold text-lg mb-2"> Beginner Level</h3>
                 <p className="text-muted-foreground">Perfect for those just starting their skating journey. Learn fundamental techniques, balance, and safety.</p>
               </div>
               <div>
-                <h3 className="font-semibold text-lg mb-2">🟡 Intermediate Level</h3>
+                <h3 className="font-semibold text-lg mb-2"> Intermediate Level</h3>
                 <p className="text-muted-foreground">Build on your skills with advanced techniques, speed control, and more complex maneuvers.</p>
               </div>
               <div>
-                <h3 className="font-semibold text-lg mb-2">🔴 Pro Level</h3>
+                <h3 className="font-semibold text-lg mb-2"> Pro Level</h3>
                 <p className="text-muted-foreground">Master advanced techniques, competitive racing, and specialized skating disciplines.</p>
               </div>
             </CardContent>
@@ -103,7 +103,7 @@ export default function Services() {
             {/* Home Coaching */}
             <Card>
               <CardHeader>
-                <CardTitle className="text-2xl">🏠 Home Coaching</CardTitle>
+                <CardTitle className="text-2xl"> Home Coaching</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
@@ -121,7 +121,7 @@ export default function Services() {
             {/* Term-Based Classes */}
             <Card>
               <CardHeader>
-                <CardTitle className="text-2xl">📅 Term-Based Classes</CardTitle>
+                <CardTitle className="text-2xl"> Term-Based Classes</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
@@ -179,7 +179,6 @@ export default function Services() {
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
-                  <span className="text-accent text-xl">🎯</span>
                   <span>Monthly skating competitions and races</span>
                 </li>
                 <li className="flex items-start gap-3">
@@ -187,7 +186,6 @@ export default function Services() {
                   <span>Community skating sessions and social events</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-accent text-xl">🏆</span>
                   <span>Skill showcases and performances</span>
                 </li>
                 <li className="flex items-start gap-3">
@@ -211,23 +209,18 @@ export default function Services() {
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
-                  <span className="text-accent text-xl">❤️</span>
                   <span>Experienced and passionate coaches dedicated to your success</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-accent text-xl">🤝</span>
                   <span>Diverse and welcoming community of all ages and skill levels</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-accent text-xl">🛡️</span>
                   <span>Safe and well-maintained skating facilities</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-accent text-xl">📈</span>
                   <span>Personalized coaching and progress tracking</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-accent text-xl">🎓</span>
                   <span>Continuous learning and skill development opportunities</span>
                 </li>
               </ul>
