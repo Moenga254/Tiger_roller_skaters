@@ -3,7 +3,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Footer } from '@/components/Footer';
 
 export default function Home() {
-  const videoUrl = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/Tiger_68d3192c.mp4';
+  const videoUrl = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/Tiger_c0d6040a.mp4';
   const bgImageUrl = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/Tiger_49e0b248.jpg';
 
   return (
