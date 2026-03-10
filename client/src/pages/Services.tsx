@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Footer } from '@/components/Footer';
 
 export default function Services() {
   return (
@@ -254,6 +255,7 @@ export default function Services() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

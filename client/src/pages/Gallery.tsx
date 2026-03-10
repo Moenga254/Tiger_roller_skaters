@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Footer } from '@/components/Footer';
 
 export default function Gallery() {
   const galleryImages = [
@@ -139,6 +140,7 @@ export default function Gallery() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

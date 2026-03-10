@@ -1,5 +1,6 @@
 import ScrollExpandMedia from '@/components/ui/scroll-expansion-hero';
 import { Card, CardContent } from '@/components/ui/card';
+import { Footer } from '@/components/Footer';
 
 export default function Home() {
   const videoUrl = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/Tiger_68d3192c.mp4';
@@ -62,6 +63,7 @@ export default function Home() {
           </div>
         </div>
       </ScrollExpandMedia>
+      <Footer />
     </div>
   );
 }
