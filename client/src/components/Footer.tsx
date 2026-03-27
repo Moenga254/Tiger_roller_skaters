@@ -1,4 +1,3 @@
-import React, { JSX } from 'react';
 import { Mail, MapPin, Phone, Instagram, Music } from 'lucide-react';
 
 export function Footer() {
@@ -9,6 +8,7 @@ export function Footer() {
           {/* Brand */}
           <div>
             <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+              <span>🛼</span>
               <span>Tiger Roller Skaters</span>
             </h3>
             <p className="text-sm opacity-80">
@@ -33,6 +33,11 @@ export function Footer() {
               <li>
                 <a href="/gallery" className="opacity-80 hover:opacity-100 transition">
                   Gallery
+                </a>
+              </li>
+              <li>
+                <a href="/booking" className="opacity-80 hover:opacity-100 transition">
+                  Book a Session
                 </a>
               </li>
             </ul>
