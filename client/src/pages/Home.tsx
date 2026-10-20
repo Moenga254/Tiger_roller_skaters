@@ -20,7 +20,7 @@ export default function Home() {
           {/* Tiger Roller Logo */}
           <div className="flex justify-center mb-8 md:mb-10">
             <img
-              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663402898195/kgAVhJswmeuxjzz8evqx4U/tiger_logo_573bc4d6.png"
+              src="/manus-storage/tiger-roller-logo-latest_7f80e5e0.png"
               alt="Tiger Roller Skaters Logo"
               className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-lg border-4 border-accent"
             />

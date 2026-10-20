@@ -9,6 +9,11 @@ export function Footer() {
           {/* Brand */}
           <div>
             <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+              <img
+                src="/manus-storage/tiger-roller-logo-latest_7f80e5e0.png"
+                alt="Tiger Roller Skaters logo"
+                className="w-12 h-12 rounded-full object-cover bg-white"
+              />
               <span>Tiger Roller Skaters</span>
             </h3>
             <p className="text-sm opacity-80">

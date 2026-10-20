@@ -19,6 +19,11 @@ export function Navbar() {
         <div className="flex justify-between items-center h-16 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 font-bold text-lg md:text-xl text-foreground hover:text-accent transition-colors">
+            <img
+              src="/manus-storage/tiger-roller-logo-latest_7f80e5e0.png"
+              alt="Tiger Roller Skaters logo"
+              className="w-9 h-9 md:w-11 md:h-11 rounded-full object-cover bg-white"
+            />
             <span className="hidden sm:inline text-sm md:text-base">Tiger Roller Skaters</span>
           </Link>
 
