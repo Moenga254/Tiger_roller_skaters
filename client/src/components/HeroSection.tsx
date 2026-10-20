@@ -29,10 +29,6 @@ export function HeroSection() {
                                         asChild
                                         size="lg"
                                         className="h-12 rounded-full pl-5 pr-3 text-base">
-                                        <a href="/booking">
-                                            <span className="text-nowrap">Book a Session</span>
-                                            <ChevronRight className="ml-1" size={20} />
-                                        </a>
                                     </Button>
                                     <Button
                                         asChild
@@ -137,7 +133,6 @@ const HeroHeader = () => {
                                 href="/"
                                 aria-label="Tiger Roller Skaters home"
                                 className="flex items-center space-x-2 font-bold text-lg">
-                                <span>🛼</span>
                                 <span className="hidden sm:inline">Tiger Roller</span>
                             </a>
 
@@ -185,13 +180,6 @@ const HeroHeader = () => {
                                     size="sm">
                                     <a href="/gallery">
                                         <span>Gallery</span>
-                                    </a>
-                                </Button>
-                                <Button
-                                    asChild
-                                    size="sm">
-                                    <a href="/booking">
-                                        <span>Book Now</span>
                                     </a>
                                 </Button>
                             </div>

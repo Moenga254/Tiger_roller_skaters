@@ -4,12 +4,11 @@ import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
-import { Footer } from "./components/Footer";
+import PageLoader from "./components/PageLoader";
 import { Navbar } from "./components/Navbar";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Gallery from "./pages/Gallery";
-import Booking from "./pages/Booking";
 
 
 function Router() {
@@ -18,7 +17,6 @@ function Router() {
       <Route path={"/"} component={Home} />
       <Route path={"/services"} component={Services} />
       <Route path={"/gallery"} component={Gallery} />
-      <Route path={"/booking"} component={Booking} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
@@ -30,7 +28,6 @@ function Router() {
 // - First choose a default theme according to your design style (dark or light bg), than change color palette in index.css
 //   to keep consistent foreground/background color across components
 // - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
-
 function App() {
   return (
     <ErrorBoundary>
@@ -39,10 +36,10 @@ function App() {
         switchable
       >
         <TooltipProvider>
+          <PageLoader />
           <Toaster />
           <Navbar />
           <Router />
-          <Footer />
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>
